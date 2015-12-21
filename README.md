@@ -121,10 +121,10 @@ If you'd like to evaluate BLEU/METEOR/CIDEr scores during training in addition t
 
 ### I'd like to train on my own data
 
-No problem, create a json file in the exact same form as before:
+No problem, create a json file in the exact same form as before describing all your JPG files:
 
 ```
-[{ file_path: 'path/img.jpg', captions: ['a caption', ...] }, ...]
+[{ "file_path": "path/img.jpg", "captions": ["a caption", "another similar caption" ...] }, ...]
 ```
 
 and invoke the `prepro.py` script to preprocess all the images and data into and hdf5 file and json file. Then invoke `train.lua` (see detailed options inside code).
